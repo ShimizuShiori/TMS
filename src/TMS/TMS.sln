@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMS", "TMS\TMS.csproj", "{9CF1AFD3-4142-457F-A6E6-14379A438CC6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - 基础设施", "0 - 基础设施", "{DE990FEF-0B58-4492-9762-C97D16662CB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMS.Permissions", "TMS.Permissions\TMS.Permissions.csproj", "{792D72DA-A950-40A8-A66E-F5D542CF1348}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{9CF1AFD3-4142-457F-A6E6-14379A438CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CF1AFD3-4142-457F-A6E6-14379A438CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CF1AFD3-4142-457F-A6E6-14379A438CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{792D72DA-A950-40A8-A66E-F5D542CF1348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{792D72DA-A950-40A8-A66E-F5D542CF1348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{792D72DA-A950-40A8-A66E-F5D542CF1348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{792D72DA-A950-40A8-A66E-F5D542CF1348}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{792D72DA-A950-40A8-A66E-F5D542CF1348} = {DE990FEF-0B58-4492-9762-C97D16662CB1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1603B7E5-1BA2-41DF-838D-1E781CE0DA57}
