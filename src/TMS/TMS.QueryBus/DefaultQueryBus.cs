@@ -28,6 +28,10 @@ namespace TMS.QueryBus
                 throw new NotImplementedException();
 
             object result = querier.Handle(request);
+
+            if (result == null)
+                return null;
+
             return JObject.FromObject(result).ToObject(returnType);
         }
     }

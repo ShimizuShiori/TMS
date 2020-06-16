@@ -8,6 +8,7 @@ namespace TMS.QueryBus
 {
     public abstract class QueryHandler : IQueryHandler
     {
+        // todo : 将方法与 Mode 的映射缓存，以提高性能
         private readonly Dictionary<string, MethodInfo> queryModeToMethodMap = new Dictionary<string, MethodInfo>();
 
         public QueryHandler()
@@ -30,6 +31,8 @@ namespace TMS.QueryBus
 
         public object Handle(QueryRequest request)
         {
+            // todo : 将方法的调用通过 Emit 实现
+
             MethodInfo method;
             if (!this.queryModeToMethodMap.TryGetValue(request.QueryMode, out method))
                 throw new NotImplementedException();
