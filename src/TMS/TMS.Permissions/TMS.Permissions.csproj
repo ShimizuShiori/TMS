@@ -81,6 +81,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICurrentUserAccessor.cs" />
     <Compile Include="Models\IPermission.cs" />
     <Compile Include="Models\IPermissionCollection.cs" />
     <Compile Include="Models\IUser.cs" />
