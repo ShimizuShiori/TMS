@@ -86,6 +86,7 @@
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="DefaultCurrentAccessor.cs" />
     <Compile Include="Dtos\UserDto.cs" />
+    <Compile Include="Entities\Permission.cs" />
     <Compile Include="ICurrentUserAccessor.cs" />
     <Compile Include="ICurrentUserInitor.cs" />
     <Compile Include="Listeners\InitCurrentUser.cs" />
