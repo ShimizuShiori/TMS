@@ -4,6 +4,6 @@ namespace TMS.Permissions
 {
     public interface ICurrentUserAccessor
     {
-        IUser GetCurrentUser();
+        IUser Get();
     }
 }

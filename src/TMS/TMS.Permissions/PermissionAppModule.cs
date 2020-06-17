@@ -3,6 +3,7 @@
 namespace TMS.Modules
 {
     [ComponentScanAppModule]
+    [WebApiAppModule]
     public class PermissionAppModule : AppModule
     {
     }

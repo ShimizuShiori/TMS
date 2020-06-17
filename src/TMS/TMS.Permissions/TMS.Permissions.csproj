@@ -44,7 +44,7 @@
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Reface.AppStarter, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Reface.AppStarter.2.1.11\lib\net461\Reface.AppStarter.dll</HintPath>
+      <HintPath>..\packages\Reface.AppStarter.2.1.12\lib\net461\Reface.AppStarter.dll</HintPath>
     </Reference>
     <Reference Include="Reface.AppStarter.WebApi, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Reface.AppStarter.WebApi.1.2.2\lib\net461\Reface.AppStarter.WebApi.dll</HintPath>
@@ -82,11 +82,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constant.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="DefaultCurrentAccessor.cs" />
+    <Compile Include="Dtos\UserDto.cs" />
     <Compile Include="ICurrentUserAccessor.cs" />
     <Compile Include="ICurrentUserInitor.cs" />
+    <Compile Include="Listeners\InitCurrentUser.cs" />
     <Compile Include="Models\IPermission.cs" />
     <Compile Include="Models\IPermissionCollection.cs" />
     <Compile Include="Models\IUser.cs" />
+    <Compile Include="Models\NotLoginPermissionCollection.cs" />
+    <Compile Include="Models\NotLoginUser.cs" />
+    <Compile Include="Models\UserStates.cs" />
     <Compile Include="PermissionAppModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -94,8 +102,6 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Listeners\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
